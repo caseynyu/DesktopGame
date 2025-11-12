@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class DraggableTest : MonoBehaviour
 {
 
-    [SerializeField]
+    //[SerializeField]
     private Canvas canvas;
 
     private Camera mainCamera;
@@ -15,8 +15,14 @@ public class DraggableTest : MonoBehaviour
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Awake()
+    {
+        
+    }
     void Start()
     {
+        canvas = transform.GetComponentInParent<Canvas>();
         zAxis = transform.position.z;
         mainCamera = Camera.main;
         baseWindow = transform.parent.transform;
