@@ -18,6 +18,7 @@ public class WebsiteSwitcher : MonoBehaviour
     {
         if(loadedSite != null)
         {
+            //reminder make error for if the link is one space
             Debug.Log("test");
             Destroy(loadedSite);
             loadedSite = null;

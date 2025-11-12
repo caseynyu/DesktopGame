@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class DraggableTest : MonoBehaviour
 {
-
+    //This Makes the windows draggable
     //[SerializeField]
     private Canvas canvas;
 
@@ -34,6 +34,7 @@ public class DraggableTest : MonoBehaviour
         Vector2 position;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, pointerData.position, canvas.worldCamera, out position);
         dragOffset = transform.position - canvas.transform.TransformPoint(position);
+        baseWindow.SetAsLastSibling();
     }
 
 
