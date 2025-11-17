@@ -6,6 +6,8 @@ public class PopUpWindow : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textBox;
 
+    public bool destroyOnClose;
+
     void Awake()
     {
         
@@ -18,7 +20,15 @@ public class PopUpWindow : MonoBehaviour
 
     public void WindowClose()
     {
-        Destroy(gameObject);
+        if (destroyOnClose)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+        
     }
     
 

@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 8059277601782775496}
+  destroyOnClose: 1
 --- !u!1 &1569926375264115828
 GameObject:
   m_ObjectHideFlags: 0
