@@ -38,7 +38,15 @@ public class DoubleClick : MonoBehaviour
         {
             if (clickedOnce)
             {
-                attachedWindow.SetActive(true);
+                if (attachedWindow.activeSelf)
+                {
+                    attachedWindow.SetActive(false);
+                }
+                else
+                {
+                    attachedWindow.SetActive(true);
+                }
+                
                 attachedWindow.GetComponent<RectTransform>().SetAsLastSibling();
             }
             else
