@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class PopUpCalendar : MonoBehaviour
+public class PopUpCalendar : MonoBehaviour //implement closeable
 {
     [SerializeField] TMP_Text dateText;
     
