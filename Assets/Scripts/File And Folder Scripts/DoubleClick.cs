@@ -7,8 +7,7 @@ public class DoubleClick : MonoBehaviour
 
     bool hovering = false;
     bool clickedOnce = false;
-    [SerializeField]
-    private GameObject attachedWindow;
+    public GameObject attachedWindow;
     [SerializeField]
     private float doubleClickTimeMax=.4f;
     private float doubleClickTimeCount;
@@ -40,6 +39,7 @@ public class DoubleClick : MonoBehaviour
             if (clickedOnce)
             {
                 attachedWindow.SetActive(true);
+                attachedWindow.GetComponent<RectTransform>().SetAsLastSibling();
             }
             else
             {

@@ -19,7 +19,7 @@ public class DesktopFileStorage : MonoBehaviour
         {
             if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log(pointerGrabbedObject.grabbedObject);
+                //Debug.Log(pointerGrabbedObject.grabbedObject);
                 GameObject fileToGrab = pointerGrabbedObject.grabbedObject.GetComponent<TempFile>().originalFile;
                 fileToGrab.transform.SetParent(gameObject.transform,true);
                 fileToGrab.GetComponent<RectTransform>().position = pointerGrabbedObject.grabbedObject.GetComponent<RectTransform>().position;

@@ -19,10 +19,22 @@ public class FileManagerPage : MonoBehaviour
         {
             if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log(pointerGrabbedObject.grabbedObject);
+                //Debug.Log(pointerGrabbedObject.grabbedObject);
                 GameObject fileToGrab = pointerGrabbedObject.grabbedObject.GetComponent<TempFile>().originalFile;
-
-                fileToGrab.transform.SetParent(gameObject.transform,false);
+                DoubleClick doubleClick;
+                fileToGrab.TryGetComponent<DoubleClick>(out doubleClick);
+                if(doubleClick != null)
+                {
+                    if(doubleClick.attachedWindow != gameObject.GetComponentInParent<ClosableWindow>().gameObject)
+                    {
+                        fileToGrab.transform.SetParent(gameObject.transform,false);
+                    }
+                }
+                else
+                {
+                    fileToGrab.transform.SetParent(gameObject.transform,false);
+                }
+                
             }
         }
     }
