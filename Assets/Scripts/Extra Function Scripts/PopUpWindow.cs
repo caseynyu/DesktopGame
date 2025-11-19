@@ -6,7 +6,7 @@ public class PopUpWindow : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textBox;
 
-    public bool destroyOnClose;
+    public bool destroyOnClose = true;
 
     void Awake()
     {

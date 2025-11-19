@@ -99,7 +99,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1311631900569578489}
           m_TargetAssemblyTypeName: DoubleClick, Assembly-CSharp
-          m_MethodName: pointerEnter
+          m_MethodName: PointerEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1311631900569578489}
           m_TargetAssemblyTypeName: DoubleClick, Assembly-CSharp
-          m_MethodName: pointerExit
+          m_MethodName: PointerExit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -158,8 +158,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -179,7 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369ddab8601af834cacbadff1fd1b0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myWindow: {fileID: 0}
+  attachedWindow: {fileID: 0}
+  doubleClickTimeMax: 0.4
 --- !u!1 &924939579401873068
 GameObject:
   m_ObjectHideFlags: 0
