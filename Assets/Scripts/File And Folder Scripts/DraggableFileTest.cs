@@ -3,7 +3,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DraggableFolderTest : MonoBehaviour
+public class DraggableFileTest : MonoBehaviour
 {
     private PointerGrabbedObject pointerGrabbedObject;
     private UnityEngine.UI.Image selfImage;
@@ -28,14 +28,6 @@ public class DraggableFolderTest : MonoBehaviour
         baseWindow = transform.parent.transform;
         selfImage = gameObject.GetComponent<UnityEngine.UI.Image>();
     }
-    public void OnPointerDown(BaseEventData eventData)
-    {
-        //base.OnPointerDown(eventData);
-    }
-    public void OnPointerUp(BaseEventData eventData)
-    {
-        
-    }
     public void OnDrag(BaseEventData eventData)
     {
         if (dragging && Input.GetMouseButton(0))
@@ -46,10 +38,6 @@ public class DraggableFolderTest : MonoBehaviour
             tempImage.transform.position = canvas.transform.TransformPoint(position);
         }
     }
-    public void OnDragEnd(BaseEventData eventData)
-    {
-        
-    }
     public void OnBeginDrag(BaseEventData eventData)
     {
         PointerEventData pointerData = (PointerEventData)eventData;
@@ -57,15 +45,17 @@ public class DraggableFolderTest : MonoBehaviour
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, pointerData.position, canvas.worldCamera, out position);
 
         dragging = true;
-        pointerGrabbedObject.grabbedObject = gameObject;
+        
         tempImage = Instantiate(tempImagePrefab, canvas.transform.TransformPoint(position), quaternion.identity, canvas.transform);
+        tempImage.GetComponent<TempFile>().originalFile = gameObject;
         tempImage.GetComponent<UnityEngine.UI.Image>().sprite = gameObject.GetComponent<UnityEngine.UI.Image>().sprite;
         tempImage.GetComponent<UnityEngine.UI.Image>().preserveAspect = true;
         tempImage.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
         tempImage.transform.SetAsLastSibling();
+        pointerGrabbedObject.grabbedObject = tempImage;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if(dragging && Input.GetMouseButtonUp(0))
         {
