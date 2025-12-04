@@ -13,6 +13,9 @@ public class BusGenerate : MonoBehaviour
     private TMP_Text busDate;
     [SerializeField]
     private TMP_Text busPrice;
+
+    public float busY = 100;
+    public float busMargin = 40;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +33,7 @@ public class BusGenerate : MonoBehaviour
         busOrigin.text = origin;
         busDestination.text = destination;
         busDate.text = date;
-        busPrice.text = price.ToString();
+        busPrice.text = (string)"$"+price.ToString();
         
     }
 }

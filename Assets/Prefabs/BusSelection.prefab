@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5689334661461942989}
   - component: {fileID: 5254426999515475340}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,8 +313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 537.2749}
-  m_SizeDelta: {x: 0, y: -1399.4501}
+  m_AnchoredPosition: {x: 0, y: 468.44}
+  m_SizeDelta: {x: 0, y: -936.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2437011612074383841
 CanvasRenderer:
@@ -395,7 +395,9 @@ MonoBehaviour:
   busOrigin: {fileID: 2981462439764578735}
   busDestination: {fileID: 2266287860183282153}
   busDate: {fileID: 6483744624233928835}
-  busPrice: {fileID: 6001316276208768174}
+  busPrice: {fileID: 5254426999515475340}
+  busY: 100
+  busMargin: 40
 --- !u!1 &3700331637630914762
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +669,7 @@ GameObject:
   - component: {fileID: 7149892020001003570}
   - component: {fileID: 6001316276208768174}
   m_Layer: 5
-  m_Name: Price
+  m_Name: Purchase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

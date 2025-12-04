@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BusWebsiteGen : MonoBehaviour
@@ -20,7 +21,7 @@ public class BusWebsiteGen : MonoBehaviour
         {
             BusGenerate busScript = allBusPrefabs[i].GetComponent<BusGenerate>();
             busScript.transform.SetParent(transform);
-            busScript.transform.localPosition = new UnityEngine.Vector3(0, 0, 0);
+            busScript.transform.localPosition = new UnityEngine.Vector3(0, (busScript.busY + busScript.busMargin)*i, 0);
             busScript.transform.localScale = new UnityEngine.Vector3(1,1,1);
 
         }
