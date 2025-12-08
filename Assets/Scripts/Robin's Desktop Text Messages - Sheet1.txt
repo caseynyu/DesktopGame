@@ -1,0 +1,17 @@
+ID	Text	PlayerPrefToChange
+DmessagesBefore	<color=blue>Dendrolagus:</color> these are the text messages before	
+Dintro1	<color=blue>Dendrolagus:</color> How did it go?	
+Dintro2	<color=blue>Dendrolagus:</color> What's the day again? 	flagIntroDayQuestion
+Dintro2Wrong	<color=blue>Dendrolagus:</color> Focus, Robin. You know this.	flagIntroDayQuestion
+Dintro2Right	<color=blue>Dendrolagus:</color> Great, so you're back. I almost forgot, here's a new link to the song I was mixing up, download it <color=blue><u><link="newMessenger">here</color></u></link>	flagSendMessanger
+DintroAfter	<color=blue>Dendrolagus:</color> Just give it a listen. No need to respond	
+DSecureIntro1	Are you here?	flag1Question
+DSecureIntro1Yes	Great, let's get right to it.	
+DSecureIntro1No	Ha ha, very funny	
+DSecureIntro2	They might already be watching us from your end. My side should be encrypted, but you’ll have to stick to yes or no to evade their systems. Don’t forget to get rid of the software before you leave. Got it?	flag2Question
+DSecureIntro2Y	Great.	
+DSecureIntro2N	We went over this already. Your computer isn’t secure, so we can’t afford to have you sending anything they could trace. Sure, this is clunky, but it’s as safe as we’ll get, as long as you delete it before you head out.	
+DSecureIntro3	Did you already get the train ticket and ID?	flag3Question
+DSecureIntro3Y	I thought you were doing it after.	
+DSecureIntro3a	Whatever, just make sure it’s done. Osphranter forwarded you everything you should need.	
+DSecureIntro3N	Then that’s your top priority. Osphranter forwarded you everything you should need.	
