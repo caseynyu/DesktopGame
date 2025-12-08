@@ -12,6 +12,10 @@ public class WebsiteSwitcher : MonoBehaviour
     [SerializeField]
     CustomScrollRect customScrollRect;
 
+    void Start()
+    {
+        if(loadedSite == null)loadedSite = viewport.GetChild(0).gameObject;
+    }
 
 
     public void LoadWebsite(GameObject siteToLoad)
@@ -19,7 +23,7 @@ public class WebsiteSwitcher : MonoBehaviour
         if(loadedSite != null)
         {
             //reminder make error for if the link is one space
-            Debug.Log("test");
+            //Debug.Log("test");
             Destroy(loadedSite);
             loadedSite = null;
             loadedSite = Instantiate(siteToLoad, viewport.position, Quaternion.identity, viewport);

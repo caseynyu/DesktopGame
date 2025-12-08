@@ -20,4 +20,9 @@ public class ClickableLink : MonoBehaviour, IPointerClickHandler
     {
         websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks[storedWebsiteToSwitch]);
     }
+
+    public void ButtonPress()
+    {
+        websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks[storedWebsiteToSwitch]);
+    }
 }
