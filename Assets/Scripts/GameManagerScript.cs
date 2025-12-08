@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //DEBUG KEYS ETC - REMOVE BEFORE SUBMITTING FINAL
+        if (Input.GetKey(KeyCode.Space))
+        {
+            openingVideo.SetActive(false);
+        }
     }
 
     IEnumerator playVideo(GameObject videoPlayer, float s)
