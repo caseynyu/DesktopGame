@@ -87,7 +87,7 @@ public class CalendarScript : MonoBehaviour
 
     void Start()
     {
-        UpdateCalendar(2002,5);
+        UpdateCalendar(2002,11);
     }
 
     void UpdateCalendar(int year, int month)

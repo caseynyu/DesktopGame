@@ -1,0 +1,104 @@
+using TMPro;
+using UnityEngine;
+using System.Collections.Generic;
+using System.IO;
+
+
+
+[System.Serializable]
+public class Notification
+{
+    public string id;
+    public string type;
+    public string textToDisplay;
+}
+
+public class NotificationWindow : MonoBehaviour
+{
+    [SerializeField]
+    TextAsset txt;
+    [SerializeField]
+    float notifTimerMax;
+    float notifTimerCount;
+    bool visible = false;
+    [SerializeField]
+    GameObject body;
+    [SerializeField]
+    TMP_Text textBox;
+    public Dictionary<string,Notification> allNotifs=new Dictionary<string, Notification>();
+    private string currentIdDisplaying = "";
+
+    void Awake()
+    {
+        LoadNotifications();
+    }
+
+    void Update()
+    {
+        if (visible)
+        {
+            notifTimerCount+=Time.deltaTime;
+            body.SetActive(true);
+        }
+        else
+        {
+            body.SetActive(false);
+        }
+        if (notifTimerCount>=notifTimerMax)
+        {
+            notifTimerCount = 0;
+            textBox.text = "";
+            currentIdDisplaying = "";
+            visible = false;
+
+        }
+    }
+
+    void SendNotification(string notifToDisplay)
+    {
+        textBox.text = allNotifs[notifToDisplay].textToDisplay;
+        visible = true;
+        currentIdDisplaying = notifToDisplay;
+        
+    }
+
+    void OnClick()
+    {
+        if(allNotifs[currentIdDisplaying].type == "email")
+        {
+            
+        }
+        if(allNotifs[currentIdDisplaying].type == "message")
+        {
+            
+        }
+    }
+
+    private void LoadNotifications()
+    {
+        StringReader sr=new StringReader(txt.text);
+        sr.ReadLine();
+        while (true)
+        {
+            
+            string line=sr.ReadLine();
+            if(line == null)
+            {
+                break;
+            }
+            string[] data= line.Split("\t");
+            if(data[0] == "")
+            {
+                continue;
+            }
+            Notification newLine = new Notification
+            {
+                id = data[0],
+                type = data[1] == ""?"default":data[1],
+                textToDisplay = data[2] == ""?"default":data[2]
+            ,
+            };
+            allNotifs.Add(data[0],newLine);
+        }
+    }
+}
