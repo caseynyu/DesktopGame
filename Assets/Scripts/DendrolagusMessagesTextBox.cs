@@ -17,7 +17,7 @@ public class DendrolagusMessagesTextBox : MonoBehaviour
     void Update()
     {
         textBox.text = TextMessage.instance.textBoxText;
-        NotificationWindow.instance.Hide();
+        //NotificationWindow.instance.Hide();
     }
 
     public void SendMessage()
