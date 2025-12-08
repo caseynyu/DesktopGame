@@ -22,9 +22,6 @@ public class TextMessage : MonoBehaviour
     [HideInInspector]
     public string textBoxText;
 
-    [SerializeField]
-    string textMessageToAdd;
-
     public static TextMessage instance;
 
     void Awake()
