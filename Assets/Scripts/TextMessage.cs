@@ -78,6 +78,8 @@ public class TextMessage : MonoBehaviour
     IEnumerator QueueMessage(string messageToQueue)
     {
         yield return new WaitForSeconds(Random.Range(queueTimeMin,queueTimeMax));
+        if(GameObject.FindFirstObjectByType<MessageIndicatorScript>(FindObjectsInactive.Exclude) == null)NotificationWindow.instance.MessageNotif();
+        
         AddTextMessage(messageDatabaseList[messageToQueue].text);
         if(messageDatabaseList[messageToQueue].playerPrefToChange != "default")
         {

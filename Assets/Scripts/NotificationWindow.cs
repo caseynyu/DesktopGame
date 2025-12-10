@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
+using System.Collections;
 
 
 
@@ -28,12 +29,16 @@ public class NotificationWindow : MonoBehaviour
     public Dictionary<string,Notification> allNotifs=new Dictionary<string, Notification>();
     private string currentIdDisplaying = "";
 
+    public static NotificationWindow instance;
+
     void Awake()
     {
-        LoadNotifications();
+        instance = this;
+        body.SetActive(false);
+        //LoadNotifications();
     }
 
-    void Update()
+    /*void Update()
     {
         if (visible)
         {
@@ -52,7 +57,7 @@ public class NotificationWindow : MonoBehaviour
             visible = false;
 
         }
-    }
+    }*/
 
     void SendNotification(string notifToDisplay)
     {
@@ -62,7 +67,39 @@ public class NotificationWindow : MonoBehaviour
         
     }
 
-    void OnClick()
+    public void MessageNotif()
+    {
+        StartCoroutine(Notification("New message recieved"));
+    }
+
+    public void EmailNotif()
+    {
+        StartCoroutine(Notification("New email recieved"));
+    }
+
+    public void DownloadNotif()
+    {
+        StartCoroutine(Notification("New file downloaded"));
+    }
+
+    public void Hide()
+    {
+        body.SetActive(false);
+    }
+
+    IEnumerator Notification(string textToDisplay)
+    {
+        textBox.text = textToDisplay;
+        body.SetActive(true);
+        yield return new WaitForSeconds(notifTimerMax);
+        body.SetActive(false);
+        textBox.text = "";
+        yield break;
+        
+
+    }
+
+    /*void OnClick()
     {
         if(allNotifs[currentIdDisplaying].type == "email")
         {
@@ -72,7 +109,7 @@ public class NotificationWindow : MonoBehaviour
         {
             
         }
-    }
+    }*/
 
     private void LoadNotifications()
     {

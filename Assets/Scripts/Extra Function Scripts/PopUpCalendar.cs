@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using NUnit.Framework.Internal;
 
 public class PopUpCalendar : MonoBehaviour //implement closeable
 {
@@ -20,6 +21,11 @@ public class PopUpCalendar : MonoBehaviour //implement closeable
         // Example: "May 12, 2002"
         System.DateTime d = new System.DateTime(year, month, day);
         dateText.text = d.ToString("MMMM d, yyyy");
+
+        if(day == 16)
+        {
+            dateText.text = "KANGAROO DAY";
+        }
     }
 
     // Optional: add a close button handler
