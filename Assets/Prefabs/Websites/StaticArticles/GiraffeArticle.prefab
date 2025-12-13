@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 604322123114118222}
   - component: {fileID: 5411376837010516308}
   m_Layer: 5
-  m_Name: DeathArticle
+  m_Name: GiraffeArticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +849,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TOP NAVY OFFICIAL FOUND DEAD IN SEATTLE AREA
+  m_text: 'ESCAPED GIRAFFE RETURNED TO WOODLAND PARK ZOO
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
   m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
@@ -1158,7 +1160,7 @@ MonoBehaviour:
     further details have been made available as to the cause of death or potential
     agitators. \r\n\tWithout Funderburg\u2019s initiative, inside sources say it
     is unlikely that his projects at PSNS will move forward.\r\n\r\n\tThis story
-    is still developing. \n\n\xA9 Seattle Times, 2002\nAuthor Kevin DuBois"
+    is still developing. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
   m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}

@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259, y: 787.9562}
+  m_AnchoredPosition: {x: -259, y: 592.8098}
   m_SizeDelta: {x: 417.58, y: 81.1869}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4552324628051421955
@@ -85,9 +85,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604322123114118222}
-  - component: {fileID: 5411376837010516308}
   m_Layer: 5
-  m_Name: DeathArticle
+  m_Name: SeahawkArticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,31 +106,18 @@ RectTransform:
   m_Children:
   - {fileID: 8809959883384063619}
   - {fileID: 6095424702253376049}
+  - {fileID: 6746664511840472639}
   - {fileID: 2068474416257780783}
   - {fileID: 3750290388422155292}
   - {fileID: 4314449228645731868}
   - {fileID: 8384170826080098819}
-  - {fileID: 6746664511840472639}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 2075.3}
+  m_SizeDelta: {x: 22.1163, y: 1702.8726}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &5411376837010516308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236104492429742685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c733b3a4c33dbd4ab2995f109e1bf72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  links: []
 --- !u!1 &1325532615540140797
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,8 +228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.01586914}
-  m_SizeDelta: {x: 0, y: 0.031982422}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.00012207, y: 0.00012207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9142031811295998835
 CanvasRenderer:
@@ -849,7 +835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TOP NAVY OFFICIAL FOUND DEAD IN SEATTLE AREA
+  m_text: SEAHAWKS TAKE VICTORY OVER CARDINALS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
   m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
@@ -914,7 +900,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 55.459595, y: 0, z: 60.28235, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -955,7 +941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.9953613, y: 955.6902}
+  m_AnchoredPosition: {x: -33, y: 769.49}
   m_SizeDelta: {x: 991.26, y: 163.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4764937168969996745
@@ -1106,7 +1092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -129.63904, y: -93.85364}
+  m_AnchoredPosition: {x: -129.63904, y: -289}
   m_SizeDelta: {x: 661.6716, y: 1552.6858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4866187909973206079
@@ -1137,28 +1123,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\tSecretary of the Navy R. Funderburg\u2019s body was recovered from an
-    inlet of Puget Sound early this morning after being spotted by local ferry passengers.
-    His personal vehicle was found unlocked and with significant signs of struggle,
-    leading to suspicions of murder. No official details have been released regarding
-    the cause of his death.\r\n\tRichard Funderburg took on the role only two years
-    ago, with hefty promises to oversee the renovation of homeland naval architecture
-    to accommodate the expansion of naval military operations. His most recent project
-    involved the Puget Sound Naval Shipyard, which is expected to see employment
-    growth of up to 200% by the end of this year. According to local sources, construction
-    had frequently been delayed or halted, and Funderburg announced in October that
-    he would be personally visiting the site with the intention to \u201Cenforce
-    compliance for the good of the safety of the American people.\u201D \r\n\tPassengers
-    on an early-morning ferry from Bremerton to Seattle alerted police to what appeared
-    to be a body floating in the Sinclair Inlet, and police quickly recovered and
-    identified the corpse. Funderburg\u2019s hotel room was searched, yielding nothing
-    out of the ordinary, but his car was discovered near PSNS, with both front doors
-    unlocked and with severe bloodstaining in the driver\u2019s seat and carpet.
-    It is unclear whether Funderburg was alive when he entered the inlet, and no
-    further details have been made available as to the cause of death or potential
-    agitators. \r\n\tWithout Funderburg\u2019s initiative, inside sources say it
-    is unlikely that his projects at PSNS will move forward.\r\n\r\n\tThis story
-    is still developing. \n\n\xA9 Seattle Times, 2002\nAuthor Kevin DuBois"
+  m_text: "\tThe Seahawks scored a brutal 27 - 6 victory over the Cardinals this
+    Sunday, marking their third win of the season. \n\tA rough year so far, this
+    victory has pushed the Seahawks to a record of 3 - 6, far worse than their even
+    4 - 4 record at this same time last season. \n\tIn their home state of Arizona
+    at the Sun Devil Stadium, the Cardinals scored only three points per quarter
+    in front of a crowd of almost 30,000 fans, a demoralizing and crushing defeat
+    for the team. \n\tShaun Alexander shone as the star of Sunday's victory, securing
+    his notoriety as a champion of the team this season. On a play in the early second
+    quarter, Matt Hasselback completed a pass to Alexander for a gain of 37 yards,
+    taking the Seahawks out of Cardinal territory and up to the 42-yard line. From
+    there, the offense managed a blitz for Alexander, and the running back took advantage
+    of a hole in the Cardinals defense to run the ball into the end zone. Rian Lindell
+    then completed an extra point to secure the Seahawks' lead, a position the Cardinals
+    never recovered from. \n\tWith this victory under their belts, the Seahawks'
+    next game will surely not be one to miss\u2014they'll be playing at home this
+    Sunday, the 17th, against the Denver Broncos right here at our own Seahawks Stadium.
+    Go Seahawks!\n\n\xA9Seattle Times, 2002\nAuthor James McElroy\nContributing Editor
+    Nox Mistry"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
   m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}

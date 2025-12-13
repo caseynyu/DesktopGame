@@ -1075,8 +1075,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "High-profile death in Seattle area\u2014cause unknown\n\n<color=blue><u><link=\"deathArt\">Read
-    More</link></u></color>\n\n\nEscapee giraffe recaptured in legendary police chase\n\n<color=blue><u><link=\"green\">Read
-    More</link></u></color>\n\n\nSeahawks pummel Cardinals in 10th game of season\n\n<color=blue><u><link=\"green\">Read
+    More</link></u></color>\n\n\nEscapee giraffe recaptured in legendary police chase\n\n<color=blue><u><link=\"giraffeArt\">Read
+    More</link></u></color>\n\n\nSeahawks pummel Cardinals in 9th game of season\n\n<color=blue><u><link=\"seahawksArt\">Read
     More</link></u></color>\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30ba74755c6d53e4287bfbf7344386c9, type: 2}
