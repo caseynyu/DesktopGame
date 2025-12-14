@@ -2,6 +2,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.LowLevel;
+using TMPro;
 
 public class DesktopFileStorage : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class DesktopFileStorage : MonoBehaviour
                 //Debug.Log(pointerGrabbedObject.grabbedObject);
                 GameObject fileToGrab = pointerGrabbedObject.grabbedObject.GetComponent<TempFile>().originalFile;
                 fileToGrab.transform.SetParent(gameObject.transform,true);
+                fileToGrab.GetComponentInChildren<TMP_Text>().color = Color.white;
                 fileToGrab.GetComponent<RectTransform>().position = pointerGrabbedObject.grabbedObject.GetComponent<RectTransform>().position;
             }
         }

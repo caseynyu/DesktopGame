@@ -18,6 +18,10 @@ public class DraggableFileTest : MonoBehaviour
 
     private Transform baseWindow;
 
+    [SerializeField]
+    string displayName;
+    
+
     void Start()
     {
         pointerGrabbedObject = GameObject.FindFirstObjectByType<PointerGrabbedObject>();

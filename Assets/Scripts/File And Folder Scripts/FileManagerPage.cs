@@ -1,4 +1,5 @@
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.LowLevel;
@@ -28,6 +29,7 @@ public class FileManagerPage : MonoBehaviour
                     if(doubleClick.attachedWindow != gameObject.GetComponentInParent<ClosableWindow>().gameObject)
                     {
                         fileToGrab.transform.SetParent(gameObject.transform,false);
+                        fileToGrab.GetComponentInChildren<TMP_Text>().color = Color.black;
                     }
                 }
                 else
