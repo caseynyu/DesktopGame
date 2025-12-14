@@ -7554,7 +7554,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1291227101}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.00000014523016
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10864,14 +10864,6 @@ PrefabInstance:
     - target: {fileID: 930843631508903720, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2224387892711465686, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 81.29999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644222928762937748, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -43.399994
       objectReference: {fileID: 0}
     - target: {fileID: 6755261705600512541, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
       propertyPath: m_Name
@@ -19298,7 +19290,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5303151843380323688}
   m_Direction: 2
   m_Value: -0.00000007302079
-  m_Size: 0.000000111947294
+  m_Size: 0.4889707
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
