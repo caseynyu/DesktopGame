@@ -13,10 +13,14 @@ public class PublicVariables : MonoBehaviour
 
     public int busTicketBoughtNumber=0;
     public string printedText;
+    public static GameObject canvas;
+
+    public string cultLoginUsername, cultLoginPassword;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         instance = this;
+        canvas = transform.GetComponentInParent<Canvas>().gameObject;
     }
 
     // Update is called once per frame

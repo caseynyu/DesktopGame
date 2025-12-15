@@ -13,7 +13,7 @@ public class DropEmailSendingPDF : FileManagerPage
     // Update is called once per frame
     public override void Update()
     {
-        Debug.Log(hovering);
+        //Debug.Log(hovering);
         if (hovering && pointerGrabbedObject.grabbedObject !=null)
         {
             if (Input.GetMouseButtonUp(0))

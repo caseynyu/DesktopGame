@@ -5,6 +5,8 @@ using AYellowpaper.SerializedCollections;
 
 public class DownloadLink : MonoBehaviour, IPointerClickHandler
 {
+    [SerializeField]
+    string downloadIndex;
     void Awake()
     {
 
@@ -38,5 +40,10 @@ public class DownloadLink : MonoBehaviour, IPointerClickHandler
 
             
         }*/
+    }
+    public void Download()
+    {
+        NotificationWindow.instance.DownloadNotif();
+        DownloadFilesManager.instance.DownloadFile(downloadIndex);
     }
 }
