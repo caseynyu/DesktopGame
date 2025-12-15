@@ -70,7 +70,7 @@ public class PublicVariables : MonoBehaviour
         {
             sentGoodbyeEmail = true;
         }
-        if(emailAddress == "richf@evergreen.net"&& emailID == "resignationEmail")
+        if(emailAddress == "piperc@evergreen.net"&& emailID == "resignationEmail")
         {
             sentResignationEmail = true;
         }

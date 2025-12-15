@@ -269,8 +269,8 @@ MonoBehaviour:
     one of us. Together, we will bring about the world as it was dreamt. We look
     forward to seeing you.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
-  m_sharedMaterial: {fileID: 3689724609157506683, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -616,8 +616,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Welcome back, Petrogale
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
-  m_sharedMaterial: {fileID: 3689724609157506683, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -752,8 +752,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '  Your process'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
-  m_sharedMaterial: {fileID: 3689724609157506683, guid: 5789368c7dd9e0142adb19f602438b38, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

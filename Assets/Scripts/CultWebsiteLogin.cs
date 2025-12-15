@@ -20,7 +20,7 @@ public class CultWebsiteLogin : MonoBehaviour
     {
         if(usernameField.text == PublicVariables.instance.cultLoginUsername && passwordField.text == PublicVariables.instance.cultLoginPassword)
         {
-            websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks[websiteIDToChangeTo]);
+            websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks["cultWebsiteLogin"]);
         }
     }
 }
