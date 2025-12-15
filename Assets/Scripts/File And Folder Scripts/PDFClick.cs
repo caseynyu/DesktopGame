@@ -58,16 +58,8 @@ public class PDFClick : DoubleClick
                 attachedWindow = null;
             }
         }
-        else
-        {
-            if (attachedWindow.activeSelf)
-            {
-                attachedWindow.SetActive(false);
-            }
-            else
-            {
-                attachedWindow.SetActive(true);
-            }
+        else{
+            attachedWindow.SetActive(true);
             
             attachedWindow.GetComponent<RectTransform>().SetAsLastSibling();
         }

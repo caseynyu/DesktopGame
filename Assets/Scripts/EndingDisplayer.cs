@@ -1,10 +1,6 @@
 using System;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.MemoryProfiler;
 using UnityEngine;
-using UnityEngine.Timeline;
-using static UnityEngine.Rendering.DebugUI.Table;
 
 public class EndingDisplayer : MonoBehaviour
 {
@@ -91,7 +87,8 @@ public class EndingDisplayer : MonoBehaviour
 
     public void createArticle()
     {
-
+        articleTMP.text = "";
+        titleTMP.text = "";
 
         //titles
         if (ticket && files) { title = freeTitle; free = true; }
@@ -148,5 +145,6 @@ public class EndingDisplayer : MonoBehaviour
         article += ENTER + funderburg2;
 
         articleTMP.text = article;
+        articleTMP.text= articleTMP.text+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     }
 }
