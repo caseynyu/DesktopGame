@@ -18,9 +18,12 @@ public class CultWebsiteLogin : MonoBehaviour
     }
     public void LoginButtonPress()
     {
-        if(usernameField.text == PublicVariables.instance.cultLoginUsername && passwordField.text == PublicVariables.instance.cultLoginPassword)
+        Debug.Log(usernameField.text);
+        Debug.Log(passwordField.text);
+        if(usernameField.text.Trim() == PublicVariables.instance.cultLoginUsername && passwordField.text.Trim() == PublicVariables.instance.cultLoginPassword)
         {
-            websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks[websiteIDToChangeTo]);
+            
+            websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks["cultWebsiteLogin"]);
         }
     }
 }

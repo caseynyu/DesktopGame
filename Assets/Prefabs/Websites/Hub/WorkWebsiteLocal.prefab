@@ -69,8 +69,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -210,8 +210,8 @@ MonoBehaviour:
 
     - Sherry'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -366,8 +366,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -556,8 +556,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EverGreen Goods
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 35aa2ff661e2bdf4180209a2cc7911e7, type: 2}
-  m_sharedMaterial: {fileID: 3267538318185470488, guid: 35aa2ff661e2bdf4180209a2cc7911e7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -692,8 +692,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: WE FOUND YOUR STORE!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -905,8 +905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Only The Best.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1041,8 +1041,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bremerton, WA Branch
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1177,8 +1177,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Contact our Bremerton team!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1400,8 +1400,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1634,8 +1634,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1862,8 +1862,8 @@ MonoBehaviour:
     our committment to local globality, you could be seeing the freshest Bremerton
     ingredients in a store near you!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0445602e006599347a14a022e954282d, type: 2}
-  m_sharedMaterial: {fileID: -3527436854880083569, guid: 0445602e006599347a14a022e954282d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5967e21811a48944393d55103229044f, type: 2}
+  m_sharedMaterial: {fileID: -6006655369877594126, guid: 5967e21811a48944393d55103229044f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

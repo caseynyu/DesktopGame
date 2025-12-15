@@ -27,6 +27,7 @@ public class EmailCreatorScript : MonoBehaviour
     public void DownloadEmail()
     {
         //Email displayingEmail = EmailManager.instance.emailDatabaseList[id];
+        Debug.Log(id);
         DownloadFilesManager.instance.DownloadEmail(id);
         NotificationWindow.instance.DownloadNotif();
     }

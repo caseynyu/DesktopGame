@@ -22,6 +22,7 @@ public class DownloadLink : MonoBehaviour, IPointerClickHandler
         TMP_LinkInfo linkInfo = text.textInfo.linkInfo[linkIndex];
         string linkId = linkInfo.GetLinkID();
         DownloadFilesManager.instance.DownloadFile(linkId);
+        NotificationWindow.instance.DownloadNotif();
 
         //Debug.Log(websiteDictionary.WebsiteLinks[linkId]);
         //websiteSwitcher.LoadWebsite(websiteDictionary.WebsiteLinks[linkId]);

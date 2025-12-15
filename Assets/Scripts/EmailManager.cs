@@ -20,7 +20,9 @@ public class EmailManager : MonoBehaviour
     float queueTimeMin,queueTimeMax;
     [SerializeField]
     TextAsset emailText;
-    public List<string> currentEmails = new List<string>();
+    public List<string> currentEmails = new List<string>(
+
+    );
     public Dictionary<string,Email> emailDatabaseList=new Dictionary<string, Email>();
     //int emailDispPageNumber = 0;
     public static EmailManager instance;
@@ -35,8 +37,6 @@ public class EmailManager : MonoBehaviour
     }
     void Start()
     {
-        currentEmails.Add("testemail1");
-        currentEmails.Add("testmail2");
         //PopulateEmails();
     }
 

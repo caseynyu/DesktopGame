@@ -41,7 +41,7 @@ public class DropLockedFile : FileManagerPage
     public void UnlockFile()
     {
         NotificationWindow.instance.DownloadNotif();
-        //DownloadFilesManager.instance.DownloadFile(unlockedFile)
+        DownloadFilesManager.instance.DownloadFile("password");
         fileNameTextBox.text = "Drop Locked File Here !!!";
     }
 }

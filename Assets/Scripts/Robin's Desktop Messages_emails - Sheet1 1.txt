@@ -1,5 +1,0 @@
-ID	Sender	Subject	Date and Time	Body Text
-testemail1	Joe Schmo	Hi this is a test	11/2, 5:34 PM	blah blah blah
-testmail2	Random Name	This is another test	11/3, 5:34 PM	etc etc etc
-OInfoEmail	Osphranter	IMPORTANT	UNKNOWN	
-			current time	

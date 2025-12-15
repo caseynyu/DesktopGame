@@ -7,7 +7,7 @@ public class NotepadWindow : MonoBehaviour
     private TMP_InputField input;
     void Start()
     {
-        input.text = "ptrgale012\nRPassword123";
+        input.text = "";
        
     }
 

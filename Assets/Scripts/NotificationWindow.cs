@@ -16,6 +16,9 @@ public class Notification
 
 public class NotificationWindow : MonoBehaviour
 {
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip notificationSound;
     [SerializeField]
     TextAsset txt;
     [SerializeField]
@@ -35,6 +38,7 @@ public class NotificationWindow : MonoBehaviour
     {
         instance = this;
         body.SetActive(false);
+        audioSource=GetComponent<AudioSource>();
         //LoadNotifications();
     }
 
@@ -70,24 +74,29 @@ public class NotificationWindow : MonoBehaviour
     public void MessageNotif()
     {
         StartCoroutine(Notification("New message recieved"));
+        audioSource.PlayOneShot(notificationSound);
     }
 
     public void EmailNotif()
     {
         StartCoroutine(Notification("New email recieved"));
+        audioSource.PlayOneShot(notificationSound);
     }
 
     public void DownloadNotif()
     {
         StartCoroutine(Notification("New file downloaded"));
+        audioSource.PlayOneShot(notificationSound);
     }
     public void PrintingNotif()
     {
         StartCoroutine(Notification("File printing"));
+        audioSource.PlayOneShot(notificationSound);
     }
     public void SentEmailNotif()
     {
         StartCoroutine(Notification("Sent email"));
+        audioSource.PlayOneShot(notificationSound);
     }
 
     public void Hide()

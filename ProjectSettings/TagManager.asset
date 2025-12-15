@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - lockedfile
+  - robinphoto
+  - photo1
+  - photo2
+  - photo3
   layers:
   - Default
   - TransparentFX
