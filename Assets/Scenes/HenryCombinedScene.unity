@@ -4400,6 +4400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!222 &260226278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7678,8 +7679,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 355720630}
   m_HandleRect: {fileID: 355720629}
   m_Direction: 2
-  m_Value: 0.0000004381247
-  m_Size: 0
+  m_Value: -0.00000029208312
+  m_Size: 0.00000011194728
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10391,6 +10392,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631912824}
   m_CullTransparentMesh: 1
+--- !u!224 &633588936 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 930843631508903720, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
+  m_PrefabInstance: {fileID: 909554105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &641533329
 GameObject:
   m_ObjectHideFlags: 0
@@ -11479,6 +11485,12 @@ MonoBehaviour:
     _serializedList:
     - Key: blue
       Value: {fileID: 252477629663044982, guid: eb2f90522b7b2a845951b36f0df01978, type: 3}
+    - Key: bookmarks
+      Value: {fileID: 252477629663044982, guid: f3f3d637b064582429ec4f42253ad523, type: 3}
+    - Key: recs
+      Value: {fileID: 252477629663044982, guid: bca68f104ab3ba345a777489be608fc3, type: 3}
+    - Key: recents
+      Value: {fileID: 252477629663044982, guid: fe016c916d77c35438fe8fecd9c3a93e, type: 3}
     - Key: recieptWebsite
       Value: {fileID: 9113298833416127515, guid: ae4fb208b56eccd418161717917c3e33, type: 3}
     - Key: deathArt
@@ -11491,10 +11503,10 @@ MonoBehaviour:
       Value: {fileID: 4827626822702910858, guid: 4e56b0b0376398d49bbc82be8586b95b, type: 3}
     - Key: home
       Value: {fileID: 252477629663044982, guid: c5a2f6c85789fbb4196cb15bb30af16d, type: 3}
-    - Key: decryptionToolWebsite
-      Value: {fileID: 4793433892666233534, guid: 9610a8eca7458064bb592dd67161c3be, type: 3}
     - Key: templateEmailWebsite
       Value: {fileID: 3859896066396192069, guid: cc34daac188b9d6428ab248266f5b7e2, type: 3}
+    - Key: decryptionToolWebsite
+      Value: {fileID: 4793433892666233534, guid: 9610a8eca7458064bb592dd67161c3be, type: 3}
     - Key: emailWebsite
       Value: {fileID: 6460708627680586965, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
     - Key: green
@@ -11753,6 +11765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!114 &708886969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13068,11 +13081,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
---- !u!224 &909554106 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1077020032706792042, guid: c98a7293a01b7b2438c3041e53be7148, type: 3}
-  m_PrefabInstance: {fileID: 909554105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &916089622
 GameObject:
   m_ObjectHideFlags: 0
@@ -17293,7 +17301,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 909554106}
+  - {fileID: 633588936}
   m_Father: {fileID: 101598733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -20869,6 +20877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!222 &1589328402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21712,6 +21721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!222 &1664887419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22249,6 +22259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!114 &1688160485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27937,6 +27948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!222 &2041492647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28256,7 +28268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 417.9299}
+  m_AnchoredPosition: {x: 0, y: 417.93008}
   m_SizeDelta: {x: 0, y: 817.82}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2056843969
@@ -28821,6 +28833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
+  displayName: 
 --- !u!114 &2099654026
 MonoBehaviour:
   m_ObjectHideFlags: 0
