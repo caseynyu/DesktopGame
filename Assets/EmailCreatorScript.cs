@@ -1,3 +1,4 @@
+using AYellowpaper.SerializedCollections;
 using TMPro;
 using UnityEngine;
 
@@ -21,5 +22,12 @@ public class EmailCreatorScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DownloadEmail()
+    {
+        //Email displayingEmail = EmailManager.instance.emailDatabaseList[id];
+        DownloadFilesManager.instance.DownloadEmail(id);
+        NotificationWindow.instance.DownloadNotif();
     }
 }

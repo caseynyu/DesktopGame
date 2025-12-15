@@ -4,17 +4,21 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.LowLevel;
 
-public class FileManagerPage : MonoBehaviour
+public class RecycleBinPage : MonoBehaviour
 {
-    protected PointerGrabbedObject pointerGrabbedObject;
+    private PointerGrabbedObject pointerGrabbedObject;
     Ray ray;
 	RaycastHit hit;
-    protected private bool hovering=false;
+    private bool hovering=false;
+    [SerializeField]
+    GameObject deleteConfirmPopup,cantBeDeletedPopup;
+    GameObject canvas;
     void Start()
     {
         pointerGrabbedObject = GameObject.FindFirstObjectByType<PointerGrabbedObject>();
+        canvas = transform.GetComponentInParent<Canvas>().gameObject;
     }
-    public virtual void Update()
+    void Update()
     {
         if (hovering && pointerGrabbedObject.grabbedObject !=null)
         {
@@ -24,21 +28,30 @@ public class FileManagerPage : MonoBehaviour
                 GameObject fileToGrab = pointerGrabbedObject.grabbedObject.GetComponent<TempFile>().originalFile;
                 DoubleClick doubleClick;
                 fileToGrab.TryGetComponent<DoubleClick>(out doubleClick);
+
                 if(doubleClick != null)
                 {
-                    if(doubleClick.attachedWindow != gameObject.GetComponentInParent<ClosableWindow>().gameObject)
+                    if (doubleClick.cantBeDeleted == false)
                     {
                         fileToGrab.transform.SetParent(gameObject.transform,false);
                         fileToGrab.GetComponentInChildren<TMP_Text>().color = Color.black;
                     }
-                }
-                else
-                {
-                    fileToGrab.transform.SetParent(gameObject.transform,false);
-                }
-                
+                    else
+                    {
+                        GameObject popupObj = Instantiate(cantBeDeletedPopup,canvas.transform);
+                        popupObj.GetComponent<PopUpWindow>().SetupPopUp("This file can not be deleted.");
+                    }
+                    
+
+                } 
             }
         }
+    }
+
+    public void DeleteConfirmation()
+    {
+        GameObject deletepopup = Instantiate(deleteConfirmPopup,canvas.transform);
+        deletepopup.GetComponent<DeleteFiles>().recycleBinWebsite = gameObject;
     }
 
     public void PointerEnter()

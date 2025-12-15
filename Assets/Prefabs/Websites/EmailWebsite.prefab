@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000038146973, y: -0}
+  m_AnchoredPosition: {x: -0.000038146973, y: 0}
   m_SizeDelta: {x: 316.95, y: 59.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7769595061009492018
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -442,7 +442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47, y: -385.1}
+  m_AnchoredPosition: {x: 47, y: -385.09998}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6846322601646034192
@@ -764,7 +764,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 976353990388224610}
-  - {fileID: 8621922616350052907}
   m_Father: {fileID: 3997005845304041321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -947,7 +946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107.3, y: -375.1}
+  m_AnchoredPosition: {x: -107.29999, y: -375.09998}
   m_SizeDelta: {x: 85.37, y: 71.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4710204842635535384
@@ -1340,7 +1339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: -375.1}
+  m_AnchoredPosition: {x: 130, y: -375.09998}
   m_SizeDelta: {x: 85.37, y: 71.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2996754185650072748
@@ -1457,12 +1456,13 @@ RectTransform:
   m_Children:
   - {fileID: 8019252201674631386}
   - {fileID: 990776483311151298}
+  - {fileID: 8621922616350052907}
   - {fileID: 295697998291910052}
   m_Father: {fileID: 930843631508903720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 267.72, y: 338.32}
+  m_AnchoredPosition: {x: 267.71997, y: 338.32}
   m_SizeDelta: {x: 447.59, y: 163.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4783568041486152215
@@ -1514,6 +1514,8 @@ GameObject:
   - component: {fileID: 8621922616350052907}
   - component: {fileID: 1879389296816272714}
   - component: {fileID: 7622757910530710582}
+  - component: {fileID: 4014639546228451214}
+  - component: {fileID: 4890273433446048962}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1534,12 +1536,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4347426811981646070}
-  m_Father: {fileID: 295697998291910052}
+  m_Father: {fileID: 3997005845304041321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 38.1, y: -47.33}
-  m_SizeDelta: {x: 91.91, y: 16.91}
+  m_AnchoredPosition: {x: -74.92998, y: -47.33}
+  m_SizeDelta: {x: -182.92001, y: -116.98999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1879389296816272714
 CanvasRenderer:
@@ -1579,6 +1581,65 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4014639546228451214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797059806021991941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 697f5a910f56e714da169b4adb47e21a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileNameTextBox: {fileID: 7571877046117644450}
+  emailAddressBox: {fileID: 7458261055243934345}
+--- !u!114 &4890273433446048962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797059806021991941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4014639546228451214}
+          m_TargetAssemblyTypeName: DropEmailSendingPDF, Assembly-CSharp
+          m_MethodName: PointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4014639546228451214}
+          m_TargetAssemblyTypeName: DropEmailSendingPDF, Assembly-CSharp
+          m_MethodName: PointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5106953413132599803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,7 +1760,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3995449883089050155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4014639546228451214}
+        m_TargetAssemblyTypeName: DropEmailSendingPDF, Assembly-CSharp
+        m_MethodName: SendEmail
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5835610617134344854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,7 +2050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Enter Email Address
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
