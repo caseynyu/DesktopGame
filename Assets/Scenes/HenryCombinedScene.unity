@@ -1392,7 +1392,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -4387,6 +4387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 1026527433}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &260226277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7679,8 +7680,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 355720630}
   m_HandleRect: {fileID: 355720629}
   m_Direction: 2
-  m_Value: -0.00000029208312
-  m_Size: 0.00000011194728
+  m_Value: 0.0000004381247
+  m_Size: 0.48897067
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11427,6 +11428,7 @@ MonoBehaviour:
     - Key: newMessenger
       Value: {fileID: 5091414934706371528, guid: 16f82bbd62a44de44899490a0f6fc2ee, type: 3}
   downloadFolderParent: {fileID: 1905894063}
+  EmailFilePrefab: {fileID: 0}
 --- !u!114 &704910584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11485,6 +11487,20 @@ MonoBehaviour:
     _serializedList:
     - Key: blue
       Value: {fileID: 252477629663044982, guid: eb2f90522b7b2a845951b36f0df01978, type: 3}
+    - Key: greenCrabs
+      Value: {fileID: 1236104492429742685, guid: 984c47e2eb7453c4e80fdfdfcfc79c56, type: 3}
+    - Key: greenCrabs2
+      Value: {fileID: 1236104492429742685, guid: 462ce3b8b8527e243a0e60efa04ead87, type: 3}
+    - Key: mexicanMenu
+      Value: {fileID: 1236104492429742685, guid: 71678a99c81ed4d458ae73ef004ebe0b, type: 3}
+    - Key: ferry
+      Value: {fileID: 1236104492429742685, guid: e450718d5d767fa4cb82669501a59e01, type: 3}
+    - Key: salmon
+      Value: {fileID: 1236104492429742685, guid: 913d5f15184b2ad40b1c75938b14df34, type: 3}
+    - Key: winterClothes
+      Value: {fileID: 1236104492429742685, guid: 4476199cb4a6b39438ca87dec8b0292c, type: 3}
+    - Key: workLocal
+      Value: {fileID: 1236104492429742685, guid: 1801bc3324d24a640a5715e75d10dd01, type: 3}
     - Key: bookmarks
       Value: {fileID: 252477629663044982, guid: f3f3d637b064582429ec4f42253ad523, type: 3}
     - Key: recs
@@ -11496,7 +11512,7 @@ MonoBehaviour:
     - Key: deathArt
       Value: {fileID: 1236104492429742685, guid: 41910322f4b00464b9972ff07b49e677, type: 3}
     - Key: workWebsite
-      Value: {fileID: 1408503356440266516, guid: 2814f8a02d426e44f94b6078304abe9e, type: 3}
+      Value: {fileID: 1236104492429742685, guid: 1abdf992cbce7204bad1c2d680b2d471, type: 3}
     - Key: busWebsite
       Value: {fileID: 3318360104527092932, guid: 37bafd5f77aa2fc45b8a07dbe8bdbd70, type: 3}
     - Key: cultWebsite
@@ -16039,6 +16055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 1582149065}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &1183803067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20864,6 +20881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 1843623900}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &1589328401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21708,6 +21726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 998429911}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &1664887418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22966,6 +22985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 128996536}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &1724952119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27935,6 +27955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedWindow: {fileID: 403289849}
   doubleClickTimeMax: 0.4
+  cantBeDeleted: 0
 --- !u!114 &2041492646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28268,7 +28289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 417.93008}
+  m_AnchoredPosition: {x: 0, y: 417.92984}
   m_SizeDelta: {x: 0, y: 817.82}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2056843969
