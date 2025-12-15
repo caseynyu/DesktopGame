@@ -81,6 +81,14 @@ public class NotificationWindow : MonoBehaviour
     {
         StartCoroutine(Notification("New file downloaded"));
     }
+    public void PrintingNotif()
+    {
+        StartCoroutine(Notification("File printing"));
+    }
+    public void SentEmailNotif()
+    {
+        StartCoroutine(Notification("Sent email"));
+    }
 
     public void Hide()
     {

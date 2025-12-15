@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 
@@ -13,6 +14,8 @@ namespace AYellowpaper.SerializedCollections
 
         [SerializeField]
         Transform downloadFolderParent;
+        [SerializeField]
+        GameObject EmailFilePrefab;
         void Awake()
         {
             instance = this;
@@ -20,6 +23,24 @@ namespace AYellowpaper.SerializedCollections
         public void DownloadFile(string linkId)
         {
              Instantiate(downloadObjects[linkId],downloadFolderParent);
+        }
+
+        public void DownloadEmail(string emailID)
+        {
+            
+            GameObject newFile = Instantiate(EmailFilePrefab,downloadFolderParent);
+            newFile.GetComponent<PDFClick>().emailID = emailID;
+            string titleText = EmailManager.instance.emailDatabaseList[emailID].subject;
+            string iconName;
+            if (titleText.Length > 12)
+            {
+                iconName = titleText.Substring(0,10)+"...";
+            }
+            else
+            {
+                iconName = titleText;
+            }
+            newFile.GetComponent<PDFClick>().Setup(iconName);
         }
     }
 }
