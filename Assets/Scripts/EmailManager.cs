@@ -17,6 +17,8 @@ public class Email
 public class EmailManager : MonoBehaviour
 {
     [SerializeField]
+    float queueTimeMin,queueTimeMax;
+    [SerializeField]
     TextAsset emailText;
     public List<string> currentEmails = new List<string>();
     public Dictionary<string,Email> emailDatabaseList=new Dictionary<string, Email>();
@@ -73,5 +75,18 @@ public class EmailManager : MonoBehaviour
             };
             emailDatabaseList.Add(data[0],newEmail);
         }
+    }
+
+
+    public IEnumerator QueueEmail(string emailToQueue)
+    {
+        Debug.Log("email sent");
+        yield return new WaitForSeconds(Random.Range(queueTimeMin,queueTimeMax));
+        if(GameObject.FindFirstObjectByType<MessageIndicatorScript>(FindObjectsInactive.Exclude) == null)NotificationWindow.instance.EmailNotif();
+        currentEmails.Insert(0,emailToQueue);
+        Debug.Log("email sent");
+        yield break;
+
+
     }
 }

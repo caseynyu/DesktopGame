@@ -12,13 +12,14 @@ public class DoubleClick : MonoBehaviour
     private float doubleClickTimeMax=.4f;
     private float doubleClickTimeCount;
 
-    void Start()
+    public bool cantBeDeleted=false;
+    public virtual void Start()
     {
         doubleClickTimeCount = 0f;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if(clickedOnce == true)
         {
@@ -38,16 +39,7 @@ public class DoubleClick : MonoBehaviour
         {
             if (clickedOnce)
             {
-                if (attachedWindow.activeSelf)
-                {
-                    attachedWindow.SetActive(false);
-                }
-                else
-                {
-                    attachedWindow.SetActive(true);
-                }
-                
-                attachedWindow.GetComponent<RectTransform>().SetAsLastSibling();
+                WhenDoubleClicked();
             }
             else
             {
@@ -56,6 +48,20 @@ public class DoubleClick : MonoBehaviour
             }
         }
 
+    }
+
+    public virtual void WhenDoubleClicked()
+    {
+        if (attachedWindow.activeSelf)
+        {
+            attachedWindow.SetActive(false);
+        }
+        else
+        {
+            attachedWindow.SetActive(true);
+        }
+        
+        attachedWindow.GetComponent<RectTransform>().SetAsLastSibling();
     }
 
     public void PointerEnter()
