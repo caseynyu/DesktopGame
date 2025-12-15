@@ -1,11 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class NotepadWindow : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField]
+    private TMP_InputField input;
     void Start()
     {
-        
+        input.text = "ptrgale012\nRPassword123";
+       
     }
 
     // Update is called once per frame
