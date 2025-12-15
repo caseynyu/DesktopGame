@@ -1,17 +1,82 @@
-ID	Text	PlayerPrefToChange
-DmessagesBefore	<color=blue>Dendrolagus:</color> these are the text messages before	
-Dintro1	<color=blue>Dendrolagus:</color> How did it go?	
-Dintro2	<color=blue>Dendrolagus:</color> What's the day again? 	flagIntroDayQuestion
-Dintro2Wrong	<color=blue>Dendrolagus:</color> Focus, Robin. You know this.	flagIntroDayQuestion
-Dintro2Right	<color=blue>Dendrolagus:</color> Great, so you're back. I almost forgot, here's a new link to the song I was mixing up, download it <color=blue><u><link="newMessenger">here</color></u></link>	flagSendMessanger
-DintroAfter	<color=blue>Dendrolagus:</color> Just give it a listen. No need to respond	
-DSecureIntro1	Are you here?	flag1Question
-DSecureIntro1Yes	Great, let's get right to it.	
-DSecureIntro1No	Ha ha, very funny	
-DSecureIntro2	They might already be watching us from your end. My side should be encrypted, but you’ll have to stick to yes or no to evade their systems. Don’t forget to get rid of the software before you leave. Got it?	flag2Question
-DSecureIntro2Y	Great.	
-DSecureIntro2N	We went over this already. Your computer isn’t secure, so we can’t afford to have you sending anything they could trace. Sure, this is clunky, but it’s as safe as we’ll get, as long as you delete it before you head out.	
-DSecureIntro3	Did you already get the train ticket and ID?	flag3Question
-DSecureIntro3Y	I thought you were doing it after.	
-DSecureIntro3a	Whatever, just make sure it’s done. Osphranter forwarded you everything you should need.	
-DSecureIntro3N	Then that’s your top priority. Osphranter forwarded you everything you should need.	
+ID	Text	PlayerPrefToChange		DENDROLAGUS
+firstConvo1	<color=blue>Dendrolagus:</color> is this petrogale?			
+firstConvo2	<color=red>Robin:</color> yes.			
+firstConvo3	<color=blue>Dendrolagus:</color> when is the night darkest?			
+firstConvo4	<color=red>Robin:</color> Before the Marsupial Dawn.			
+firstConvo5	<color=blue>Dendrolagus:</color> nice to meet you, petrogale. i'm dendrolagus			
+firstConvo6	<color=blue>Dendrolagus:</color> i'll be walking you through your process			
+firstConvo7	<color=blue>Dendrolagus:</color> we're very excited to have you with us			
+firstConvo8	<color=blue>Dendrolagus:</color> osphranter should have updated everything on your end. i'll give you the password in the next message. write it down & then delete it			
+firstConvo9	<color=red>Robin:</color> Done.			
+firstConvo10	<color=blue>Dendrolagus:</color> good			
+firstConvo11	<color=blue>Dendrolagus:</color> we'll be in touch			
+				
+secondConvo1	<color=red>Robin:</color> D?			
+secondConvo2	<color=blue>Dendrolagus:</color> i'm here			
+secondConvo3	<color=blue>Dendrolagus:</color> all good?			
+secondConvo4	<color=red>Robin:</color> All good.			
+secondConvo5	<color=red>Robin:</color> just			
+secondConvo6	<color=red>Robin:</color> Is this really ok?			
+secondConvo7	<color=blue>Dendrolagus:</color> i'm glad you asked, petrogale			
+secondConvo8	<color=blue>Dendrolagus:</color> when faced with total moral corruption of public institutions, personal morality becomes void. if, with our individual acts, we are working towards a net positive of that which is good and moral, the potential harm of our individual acts is negated			
+secondConvo9	<color=blue>Dendrolagus:</color> by this i mean			
+secondConvo10	<color=blue>Dendrolagus:</color> it is unproductive to ask whether or not our acts are "ok", only whether or not they are necessary 			
+secondConvo11	<color=blue>Dendrolagus:</color> do you understand?			
+secondConvo12	<color=red>Robin:</color> Yes. Thank you.			
+secondConvo13	<color=blue>Dendrolagus:</color> of course petrogale			
+secondConvo14	<color=blue>Dendrolagus:</color> we have the utmost faith in you			
+				
+thirdConvo1	<color=blue>Dendrolagus:</color> petrogale			
+thirdConvo2	<color=blue>Dendrolagus:</color> all ready?			
+thirdConvo3	<color=red>Robin:</color> Ready to go.			
+thirdConvo4	<color=blue>Dendrolagus:</color> luck from us here			
+thirdConvo5	<color=red>Robin:</color> Can't wait to be there.			
+thirdConvo6	<color=red>Robin:</color> D?			
+thirdConvo7	<color=blue>Dendrolagus:</color> we'll talk when you're back			
+				
+Dintro1	<color=blue>Dendrolagus:</color> how did it go?			
+Dintro2	<color=blue>Dendrolagus:</color> what's the day again? 	flagIntroDayQuestion		
+Dintro2Wrong	<color=blue>Dendrolagus:</color> focus, petrogale. you know this.	flagIntroDayQuestion		
+Dintro2Right	<color=blue>Dendrolagus:</color> great, you're back. i almost forgot, here's a new link to the song I was mixing up, download it <color=blue><u><link="newMessenger">here</color></u></link>	flagSendMessanger		
+DintroAfter	<color=blue>Dendrolagus:</color> just give it a listen. no need to respond			
+DSecureIntro1	are you here?	flag1Question		
+DSecureIntro1Yes	great, let's get right to it			
+DSecureIntro1No	ha ha, very funny			
+DSecureIntro2	they might already be watching us from your end. my side should be encrypted, but you’ll have to stick to yes or no to evade their systems. don’t forget to get rid of the software before you leave. got it?	flag2Question		
+DSecureIntro2Y	great			
+DSecureIntro2N	we went over this already. your computer isn’t secure, so we can’t afford to have you sending anything they could trace. sure, this is clunky, but it’s as safe as we’ll get, as long as you delete it before you head out			
+DSecureIntro3	did you already get the ticket and id?	flag3Question		
+DSecureIntro3Y	i thought you were doing it after			
+DSecureIntro3a	whatever, just make sure it’s done. osphranter forwarded you everything you should need			
+DSecureIntro3N	then do that first. osphranter forwarded you everything you should need			
+DSecureIntro3last	if you need any help just press no on this	flag3last		
+				
+boss1line1	<color=blue>Piper:</color> Hi Robin! Tim called out this morning. Can you come in at 4pm today?			BOSS 
+boss1line2	<color=blue>Piper:</color> This is Piper, the new floor manager :)			
+boss1line3	<color=red>Robin:</color> Can't today, sorry			
+boss1line4	<color=blue>Piper:</color> Oh! Okay!			
+				
+boss2line1	<color=red>Robin:</color> Hey can't be there Thursday got sick sorry			
+boss2line2	<color=blue>Piper:</color> Hi Robin! Thanks for letting me know! Can you file a callout sheet with Rich?			
+boss2line3	<color=red>Robin:</color> Sure			
+				
+boss3line1	<color=red>Piper:</color> Hi Robin! We didn't see you yesterday. Rich filed a no-show sheet. Will you be here this afternoon?			
+boss3line2	<color=blue>Robin:</color> Yes, sorry			
+				
+boss4line1	<color=blue>Piper:</color> Hi Robin! As you heard this morning, upper management is moving all communications to email. Mine and Rich's emails are on the new website. Thanks for being cooperative!			
+				
+				
+DHint1	hey. everything going alright?	flaghint1		
+DHint1Yes	ok. glad to hear it			
+DHint1a	you've got this, petrogale. do you have your ticket yet?	ticketask		
+DHint1aYes	ok good. need anything else ?	hint1askmore		
+DHint1No	ok. start with that then. just get yourself out of the city and go from there			
+DHint2	need more help? do u have the id yet?	idask		
+DHint2No	ok. that's next. 			
+DHint2Yes	good. still need me?	hint2askmore		
+DHint3	you've told every1 you'll be out of town? 	emailask		
+DHint3No	remember, we went over this. anyone who might be suspicious once you're gone. work, roommates...			
+DHint3Yes	good. need anything else?	hint3askmore		
+DHint4	you're so close, petrogale. just get everything traceable off your computer and you can get out of there. ok?	fileask		
+DHint4Yes	you've got this, petrogale. we're all excited to meet you.			
+DHint4No	stay focused, p. hard work is already done. if you need to get out of there, just go			

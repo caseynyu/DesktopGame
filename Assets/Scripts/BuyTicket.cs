@@ -66,11 +66,12 @@ public class BuyTicket : MonoBehaviour
         };
         EmailManager.instance.emailDatabaseList.Add(newEmail.id,newEmail);
         EmailManager.instance.StartCoroutine(EmailManager.instance.QueueEmail(newEmail.id));
+        PublicVariables.instance.boughtBusTicket = true;
         Destroy(gameObject);
 
     }
     public void ClickNo()
     {
-        
+        Destroy(gameObject);
     }
 }

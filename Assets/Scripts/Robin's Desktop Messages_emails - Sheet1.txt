@@ -1,0 +1,15 @@
+ID	Sender	Subject	Date and Time	Body Text
+workEmail1	richf@evergreen.net	Payroll 10/27	10/27, 5:08 PM	Hi team, something in the payroll system went wrong so those of you on direct deposit might have to wait a couple days for checks to come through. Sorry for the delay. Rich
+roommateEmail1	mattrat@aol.com	potatoes	11/2, 5:34 PM	Hey i know the potatoes were supposed to be for you and your friends but could i please have some 
+workEmail2	richf@evergreen.net	Payroll 11/3	11/10, 5:04 PM	Hi team, payroll is out. See you next week. Rich
+ad1	advertisement@niike.com	Ready for Black Friday?	11/13, 2:34 AM	DEALS DEALS DEALS!!! Come into any certified Niike store and show this email for THIRTY PERCENT OFF shoes, skates, and more!! Terms and conditions apply. Only useable at participating Niike locations. 
+roommateEmail2	lucamcbride@aol.com	Tyler	11/5, 11:32 AM	Hi Robin is it ok if Tyler stays again tonight? Matt already said it's ok :)
+workEmail3	richf@evergreen.net	Payroll 11/10	11/10, 5:05 PM	Hi team, software went down again so those of you on direct deposit might have to wait a couple of days for things to come through. Sorry this keeps happening, hopefully it'll all be sorted soon. Rich
+ad2	advertisement@blockbuster.com	MOVIES!	11/15, 8:45 AM	Ever wanted to see a movie? Blockbuster! Blockbuster! For the movies! The movies! The movies!!!!!!!!!
+OInfoEmail	BLOCKED	DETAILS	UNKNOWN	Hello Petrogale. It is Osphranter. D has assigned me to relay the sensitive information of your process. Please remember to delete these communications after the completion of your process. \n Meeting point: Lawrence Memorial Library, 1st floor S-R Nonfiction \nCard: 1111 4711 8151 5000 12/05 392 \nWe'll also need a photo for your id. Send it to me (osphranter@dawn.net) and I should have the file ready in a couple minutes. You're doing great work.
+				
+			current time	
+goodbyeEmail	Robin	Goodbye Email	current time	\tHi guys, I have a family emergency so I won’t be in town this weekend (leaving this morning). Seems like it’s going to be a lot so I might not be back for a bit so you can have the rest of the lasagna. Matt you don’t have to vacuum my room tomorrow it’ll be ok. I might not be super in touch don’t worry about it. See you
+resignationEmail	Robin	Resignation Email	current time	\tHey Piper, just wanted to let you know that I turned in my two weeks to Rich this morning but unfortunately due to a family emergency I have to leave town today, and yesterday was my last shift. Apologies for the inconvenience and good luck with Rich. 
+ONegativeResponse	BLOCKED	details	UNKNOWN	Hello Petrogale. Doesn't look like that's a photo we can use for the id. Just needs to be you facing the camera. Send it along and I'll get it done.
+OPositiveResponse	BLOCKED	DOWNLOAD	UNKNOWN	Looks good. Just give it a download and you should be set. \n <color=blue><link="fakeid"><u>ID DOWNLOAD</u></link></color>

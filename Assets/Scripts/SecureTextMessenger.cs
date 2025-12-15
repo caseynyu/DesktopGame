@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using System.Collections;
 using System.IO;
+using UnityEngine.Rendering.UI;
 
 public class SecureTextMessenger : MonoBehaviour
 {
@@ -60,8 +61,50 @@ public class SecureTextMessenger : MonoBehaviour
         else if(PlayerPrefs.GetInt("flag3Question") == 1)
         {
             PlayerPrefs.SetInt("flag3Question",0);
-            StartCoroutine(QueueMultipleMessages("DSecureIntro3Y","DSecureIntro3a"));
+            StartCoroutine(QueueThreeMessages("DSecureIntro3Y","DSecureIntro3a","DSecureIntro3last"));
         }
+        else if (PlayerPrefs.GetInt("flaghint1") == 1)
+        {
+            PlayerPrefs.SetInt("flaghint1",0);
+            PlayerPrefs.SetInt("flag3last",1);
+            StartCoroutine(QueueMessage("DHint1Yes"));
+        }
+        else if (PlayerPrefs.GetInt("ticketask") == 1)
+        {
+            PlayerPrefs.SetInt("ticketask",0);
+            StartCoroutine(QueueMessage("DHint1aYes"));
+        }
+        else if (PlayerPrefs.GetInt("hint1askmore") == 1)
+        {
+            PlayerPrefs.SetInt("hint1askmore",0);
+            StartCoroutine(QueueMessage("DHint2"));
+        }
+        else if (PlayerPrefs.GetInt("idask") == 1)
+        {
+            PlayerPrefs.SetInt("idask",0);
+            StartCoroutine(QueueMessage("DHint2Yes"));
+        }
+        else if (PlayerPrefs.GetInt("hint2askmore")== 1)
+        {
+            PlayerPrefs.SetInt("hint2askmore",0);
+            StartCoroutine(QueueMessage("DHint3"));
+        }
+        else if (PlayerPrefs.GetInt("emailask")== 1)
+        {
+            PlayerPrefs.SetInt("emailask",0);
+            StartCoroutine(QueueMessage("DHint3Yes"));
+        }
+        else if (PlayerPrefs.GetInt("hint3askmore")== 1)
+        {
+            PlayerPrefs.SetInt("hint3askmore",0);
+            StartCoroutine(QueueMessage("DHint4"));
+        }
+        else if (PlayerPrefs.GetInt("fileask")== 1)
+        {
+            PlayerPrefs.SetInt("fileask",0);
+            StartCoroutine(QueueMessage("DHint4Yes"));
+        }
+        
     }
     public void PlayerNo()
     {
@@ -79,8 +122,61 @@ public class SecureTextMessenger : MonoBehaviour
         else if(PlayerPrefs.GetInt("flag3Question") == 1)
         {
             PlayerPrefs.SetInt("flag3Question",0);
-            StartCoroutine(QueueMessage("DSecureIntro3N"));
+            StartCoroutine(QueueMultipleMessages("DSecureIntro3N","DSecureIntro3last"));
         }
+
+
+        else if (PlayerPrefs.GetInt("flag3last") == 1)
+        {
+            PlayerPrefs.SetInt("flag3last",0);
+            StartCoroutine(QueueMessage("DHint1"));
+        }
+        else if (PlayerPrefs.GetInt("flaghint1") == 1)
+        {
+            PlayerPrefs.SetInt("flaghint1",0);
+            StartCoroutine(QueueMessage("DHint1a"));
+        }
+        else if (PlayerPrefs.GetInt("ticketask") == 1)
+        {
+            PlayerPrefs.SetInt("ticketask",0);
+            StartCoroutine(QueueMessage("DHint1No"));
+            PlayerPrefs.SetInt("nextleavehint",1);
+        }
+        else if (PlayerPrefs.GetInt("nexttickethint") == 1)
+        {
+            PlayerPrefs.SetInt("nexttickethint",0);
+            StartCoroutine(QueueMessage("DHint2"));
+        }
+        else if (PlayerPrefs.GetInt("idask") == 1)
+        {
+            PlayerPrefs.SetInt("idask",0);
+            StartCoroutine(QueueMessage("DHint2No"));
+            PlayerPrefs.SetInt("nextidhint",1);
+        }
+        else if (PlayerPrefs.GetInt("nextidhint") == 1)
+        {
+            PlayerPrefs.SetInt("nextidhint",0);
+            StartCoroutine(QueueMessage("DHint3"));
+        }
+        else if (PlayerPrefs.GetInt("emailask") == 1)
+        {
+            PlayerPrefs.SetInt("emailask",0);
+            StartCoroutine(QueueMessage("DHint3No"));
+            PlayerPrefs.SetInt("nextemailhint",1);
+        }
+        else if (PlayerPrefs.GetInt("nextemailhint") == 1)
+        {
+            PlayerPrefs.SetInt("nextemailhint",0);
+            StartCoroutine(QueueMessage("DHint4"));
+        }
+        else if (PlayerPrefs.GetInt("fileask") == 1)
+        {
+            PlayerPrefs.SetInt("fileask",0);
+            StartCoroutine(QueueMessage("DHint4No"));
+        }
+
+
+        
     }
 
     void AddTextMessage(string newText)
@@ -104,6 +200,13 @@ public class SecureTextMessenger : MonoBehaviour
     {
         yield return StartCoroutine(QueueMessage(message1));
         yield return StartCoroutine(QueueMessage(message2));
+        yield break;
+    }
+    IEnumerator QueueThreeMessages(string message1,string message2,string message3)
+    {
+        yield return StartCoroutine(QueueMessage(message1));
+        yield return StartCoroutine(QueueMessage(message2));
+        yield return StartCoroutine(QueueMessage(message3));
         yield break;
     }
 

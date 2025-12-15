@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class DendrolagusMessagesTextBox : MonoBehaviour
+public class BossMessagesTextBox : MonoBehaviour
 {
     TMP_Text textBox;
     [SerializeField]
-    TMP_Text playerInputText;
+    TMP_InputField playerInputText;
     [SerializeField]
     int linesize=45;
     
@@ -24,9 +24,9 @@ public class DendrolagusMessagesTextBox : MonoBehaviour
     void Update()
     {
         transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(transform.parent.GetComponent<RectTransform>().sizeDelta.x,textBox.textInfo.lineCount * linesize);
-        if(textBox.text != TextMessage.instance.textBoxText)
+        if(textBox.text != TextMessage.instance.bossBoxText)
         {
-            textBox.text = TextMessage.instance.textBoxText;
+            textBox.text = TextMessage.instance.bossBoxText;
             transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(transform.parent.GetComponent<RectTransform>().sizeDelta.x,textBox.textInfo.lineCount * linesize);
             scrollView.verticalScrollbar.value = 0;
         }
@@ -37,7 +37,7 @@ public class DendrolagusMessagesTextBox : MonoBehaviour
 
     public void SendMessage()
     {
-        TextMessage.instance.AddPlayerTextMessage(playerInputText.text);
+        TextMessage.instance.AddBossPlayerTextMessage(playerInputText.text);
         playerInputText.text = "";
     }
 }

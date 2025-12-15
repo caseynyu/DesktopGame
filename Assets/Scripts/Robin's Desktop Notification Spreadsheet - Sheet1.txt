@@ -1,3 +1,0 @@
-ID	Type	TextToDisplay
-testemail1	email	this is a test email notification
-testmessage1	message	this is a test message notification

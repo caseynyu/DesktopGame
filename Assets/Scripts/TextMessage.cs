@@ -21,6 +21,8 @@ public class TextMessage : MonoBehaviour
     public Dictionary<string,Message> messageDatabaseList=new Dictionary<string, Message>();
     [HideInInspector]
     public string textBoxText;
+    [HideInInspector]
+    public string bossBoxText;
 
     public static TextMessage instance;
 
@@ -28,9 +30,64 @@ public class TextMessage : MonoBehaviour
     {
         instance = this;
         LoadMessages();
-        textBoxText = messageDatabaseList["DmessagesBefore"].text;
+        AllBeforeMessages();
         
     }
+
+    void AllBeforeMessages()
+    {
+        textBoxText = messageDatabaseList["firstConvo1"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo2"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo3"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo4"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo5"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo6"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo7"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo8"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo9"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo10"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["firstConvo11"].text;
+        textBoxText = textBoxText+"\n";
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo1"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo2"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo3"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo4"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo5"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo6"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo7"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo8"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo9"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo10"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo11"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo12"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo13"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["secondConvo14"].text;
+        textBoxText = textBoxText+"\n";
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo1"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo2"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo3"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo4"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo5"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo6"].text;
+        textBoxText = textBoxText+("\n")+messageDatabaseList["thirdConvo7"].text;
+        textBoxText = textBoxText+"\n";
+
+        bossBoxText = messageDatabaseList["boss1line1"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss1line2"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss1line3"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss1line4"].text;
+        bossBoxText = bossBoxText+"\n";
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss2line1"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss2line2"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss2line3"].text;
+        bossBoxText = bossBoxText+"\n";
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss3line1"].text;
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss3line2"].text;
+        bossBoxText = bossBoxText+"\n";
+        bossBoxText = bossBoxText+("\n")+messageDatabaseList["boss4line1"].text;
+    }
+
+
     void Start()
     {
         StartCoroutine(QueueMessage("Dintro1"));
@@ -73,6 +130,12 @@ public class TextMessage : MonoBehaviour
             }
         }
         
+    }
+
+    public void AddBossPlayerTextMessage(string playerInputTextBox)
+    {
+        bossBoxText = bossBoxText+("\n")+("<color=red>Robin: </color>")+playerInputTextBox;
+        bossBoxText = bossBoxText+("\n")+("<color=blue>System: </color>")+"User is currently unavailable.";
     }
 
     IEnumerator QueueMessage(string messageToQueue)

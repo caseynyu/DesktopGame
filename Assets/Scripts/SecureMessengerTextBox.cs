@@ -5,8 +5,10 @@ using UnityEngine.UI;
 public class SecureMessengerTextBox : MonoBehaviour
 {
     TMP_Text textBox;
+    [SerializeField]
+    int linesize=45;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         textBox = GetComponent<TMP_Text>();
         SecureTextMessenger.instance.StartSecureMessenger();
@@ -15,7 +17,7 @@ public class SecureMessengerTextBox : MonoBehaviour
     void Update()
     {
         textBox.text = SecureTextMessenger.instance.textBoxText;
-        transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(transform.parent.GetComponent<RectTransform>().sizeDelta.x,textBox.textInfo.lineCount * 45);
+        transform.parent.GetComponent<RectTransform>().sizeDelta = new Vector2(transform.parent.GetComponent<RectTransform>().sizeDelta.x,textBox.textInfo.lineCount * linesize);
     }
 
     public void ButtonYes()
