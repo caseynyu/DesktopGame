@@ -1392,7 +1392,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -3434,9 +3434,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndingNewspaper
       objectReference: {fileID: 0}
+    - target: {fileID: 1236104492429742685, guid: 5f9bed7febbef3144853ab9b50634dc2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1621384422867156601, guid: 5f9bed7febbef3144853ab9b50634dc2, type: 3}
       propertyPath: DEBUGMODE
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746664511840472639, guid: 5f9bed7febbef3144853ab9b50634dc2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.527832
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7671,7 +7679,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 355720629}
   m_Direction: 2
   m_Value: 0.0000004381247
-  m_Size: 0.00000033584186
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
