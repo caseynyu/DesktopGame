@@ -90,8 +90,22 @@ public class TextMessage : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(QueueMessage("Dintro1"));
+        StartCoroutine(QueueLongMessage("Dintro1"));
         PlayerPrefs.SetInt("flagIntroStart",1);
+    }
+
+
+    IEnumerator QueueLongMessage(string messageToQueue)
+    {
+        yield return new WaitForSeconds(20);
+        if(GameObject.FindFirstObjectByType<MessageIndicatorScript>(FindObjectsInactive.Exclude) == null)NotificationWindow.instance.MessageNotif();
+        
+        AddTextMessage(messageDatabaseList[messageToQueue].text);
+        if(messageDatabaseList[messageToQueue].playerPrefToChange != "default")
+        {
+            PlayerPrefs.SetInt(messageDatabaseList[messageToQueue].playerPrefToChange,1);
+        }
+        yield break;
     }
 
     void Update()

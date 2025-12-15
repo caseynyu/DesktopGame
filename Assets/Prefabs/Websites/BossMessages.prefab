@@ -269,8 +269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -270.395}
-  m_SizeDelta: {x: 941.92, y: 540.79}
+  m_AnchoredPosition: {x: 0, y: -1009.9005}
+  m_SizeDelta: {x: 941.92, y: 2020.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &71868938373197840
 CanvasRenderer:
@@ -1600,7 +1600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -218.6, y: -0.000026703}
+  m_AnchoredPosition: {x: -13, y: -0.000026703}
   m_SizeDelta: {x: 983, y: 163.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1382857219819727016
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Boss
+  m_text: Piper (Boss from EverGreen)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

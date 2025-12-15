@@ -27,15 +27,11 @@ public class BuyTicket : MonoBehaviour
 
     public void ClickYes()
     {
-        foreach( var c in creditCardNumberText.text.Trim())
-        {
-        //Debug.Log( "[" + c + "]");
-        }
-        int cardNumberInt;
-        int.TryParse(creditCardNumberText.text.Trim(), out cardNumberInt);
+        float cardNumberFloat;
+        float.TryParse(creditCardNumberText.text.Trim(), out cardNumberFloat);
         //Debug.Log(creditCardNumberText.text);
         //Debug.Log(cardNumberInt);
-        if(cardNumberInt != PublicVariables.instance.creditCardNumber)
+        if(cardNumberFloat != PublicVariables.instance.creditCardNumber)
         {
             
             GameObject newPopUp = Instantiate(popUpWindowPrefab,canvas.transform);

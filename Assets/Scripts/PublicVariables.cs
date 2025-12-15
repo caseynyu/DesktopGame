@@ -8,7 +8,7 @@ public class PublicVariables : MonoBehaviour
     public bool boughtBusTicket=false;
     public bool idGot=false;
     public static PublicVariables instance;
-    public int creditCardNumber;
+    public float creditCardNumber;
     public string robinEmail;
     public string robinFakeName;
 
@@ -93,7 +93,7 @@ public class PublicVariables : MonoBehaviour
         }
         else
         {
-            endingDisplayer.files = true;
+            endingDisplayer.files = false;
         }
         if (idGot == true)
         {

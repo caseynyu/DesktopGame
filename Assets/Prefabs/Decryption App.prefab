@@ -147,7 +147,6 @@ GameObject:
   - component: {fileID: 7336182509583161363}
   - component: {fileID: 5912479500133564848}
   - component: {fileID: 303190791816680766}
-  - component: {fileID: 942580763999836198}
   - component: {fileID: 6303068577330875981}
   - component: {fileID: 8234286833957221625}
   - component: {fileID: 5257633139602961925}
@@ -200,21 +199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempImagePrefab: {fileID: 2595358226500854431, guid: 434e04755188c2c4fabef892df835fbe, type: 3}
   displayName: 
---- !u!114 &942580763999836198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205589575834917516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 369ddab8601af834cacbadff1fd1b0f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachedWindow: {fileID: 0}
-  doubleClickTimeMax: 0.4
-  cantBeDeleted: 1
 --- !u!114 &6303068577330875981
 MonoBehaviour:
   m_ObjectHideFlags: 0

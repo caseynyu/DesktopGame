@@ -44,7 +44,7 @@ public class DownloadLink : MonoBehaviour, IPointerClickHandler
     }
     public void Download()
     {
-
+        NotificationWindow.instance.DownloadNotif();
         DownloadFilesManager.instance.DownloadFile(downloadIndex);
     }
 }
